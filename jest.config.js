@@ -5,7 +5,8 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.ts(x)?',
     '!src/app/**', // should be tested in e2e
-    '!src/lib/registry.tsx'
+    '!src/lib/registry.tsx',
+    '!src/styles/**'
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   modulePaths: ['<rootDir>/src/'],
@@ -16,5 +17,9 @@ module.exports = {
         presets: ['next/babel']
       }
     ]
+  },
+  moduleNameMapper: {
+    '^styled-components':
+      'styled-components/dist/styled-components.browser.cjs.js'
   }
 }
