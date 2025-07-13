@@ -34,6 +34,14 @@ Você pode iniciar editando a página modificando `pages/index.js`. A página au
 - `test`: roda o jest para testar todos componentes e páginas
 - `test:watch`: roda o jest em modo *watch*
 
+## Criando uma nova aplicação a partir do boilerplate
+
+Para iniciar uma nova aplicação usando esse boilerplate, basta executar o seguinte comando:
+
+```bash
+npx create-next-app --example https://github.com/felipebbarbosa/next-boilerplate
+```
+
 ## Saiba mais
 
 Para aprender mais sobre Next.js, dê uma olhada nos seguintes recursos:
